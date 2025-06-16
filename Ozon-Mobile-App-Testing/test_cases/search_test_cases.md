@@ -55,8 +55,11 @@
 - Выдача товаров не показывается
 - История поиска не изменяется
 
+**Статус**: ⚠️ Найден баг  
 **Скриншот**:  
 ![Пустой запрос](/Ozon-Mobile-App-Testing/screenshots/empty_query.png)
+
+**Подробнее**: [Баг-репорт](/Ozon-Mobile-App-Testing/bug_reports/ozon_search_empty.md)
 ---
 
 ### 3. Спецсимволы
