@@ -34,7 +34,7 @@
   - Рейтинг (если доступен)
 
 **Скриншот**:  
-![Корректный поиск](/screenshots/correct_query.png)
+![Корректный поиск](/Ozon-Mobile-App-Testing/screenshots/correct_query.png)
 
 ---
 
@@ -55,6 +55,8 @@
 - Выдача товаров не показывается
 - История поиска не изменяется
 
+**Скриншот**:  
+![Пустой запрос](/Ozon-Mobile-App-Testing/screenshots/empty_query.png)
 ---
 
 ### 3. Спецсимволы
@@ -76,8 +78,8 @@
 
 **Статус**: ⚠️ Найден баг  
 **Скриншот**:  
-![Багрепорт](/screenshots/ozon_bad_results_rmx3085.png)  
-**Подробнее**: [Баг-репорт](/bug_reports/ozon_search_special_chars.md)
+![Багрепорт](/Ozon-Mobile-App-Testing/screenshots/ozon_bad_results_rmx3085.png)  
+**Подробнее**: [Баг-репорт](/Ozon-Mobile-App-Testing/bug_reports/ozon_search_special_chars.md)
 
 
 ---
@@ -112,7 +114,7 @@
 
 
 **Скриншот**:  
-![Корректный поиск](/screenshots/long_correct_query.png)
+![Корректный поиск](/Ozon-Mobile-App-Testing/screenshots/long_correct_query.png)
 ---
 
 ### 5. Эмодзи
@@ -133,7 +135,7 @@
 
 
 **Скриншот**:  
-![Поиск с эмодзи](/screenshots/emoji_query.png)
+![Поиск с эмодзи](/Ozon-Mobile-App-Testing/screenshots/emoji_query.png)
 ---
 
 ### 6. История поиска
@@ -154,7 +156,7 @@
 - Доступен для повторного выбора
 
 **Скриншот**:  
-![Ввод запроса](/screenshots/memory_input_query.png)
+![Ввод запроса](/Ozon-Mobile-App-Testing/screenshots/memory_input_query.png)
 **Скриншот**:  
-![Проверка истории](/screenshots/test_memory_query.png)
+![Проверка истории](/Ozon-Mobile-App-Testing/screenshots/test_memory_query.png)
 ---
