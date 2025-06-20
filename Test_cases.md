@@ -8,6 +8,8 @@
 1. [Перевод денег между счетами](#1-перевод-денег-между-счетами-позитивный-сценарий)
 2. [Попытка перевода нулевой суммы](#2-попытка-перевода-нулевой-суммы-негативный-сценарий)
 3. [Проверка истории транзакций](#3-проверка-отображения-истории-транзакций)
+4. [Смена темы (темная/светлая)](#4-смена-темы-темнаясветлая)
+5. [Оплата мобильной связи МТС](#5-оплата-мобильной-связи-мтс)
 
 ## 1. Перевод денег между счетами (позитивный сценарий)
 **ID:** TC-PAY-001  
@@ -45,35 +47,27 @@
 
 
 **Скриншоты**:  
-
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
   <tr style="text-align: center;">
-    <td style="padding: 10px; border: 1px solid #f0f0f0; vertical-align: top;">
-      <a href="screenshots/fullsize/find_contact.png">
-        <img src="screenshots/find_contact.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); max-width: 100%; height: auto;" alt="Поиск контакта в СберБанк Онлайн">
-      </a>
-      <p style="margin-top: 8px; font-size: 13px; color: #555;">1. Поиск контакта</p>
+    <td>
+      <img src="screenshots/find_contact.png" width="150" style="border: 1px solid #eee;">
+      <p>Поиск контакта</p>
     </td>
-    <td style="padding: 10px; border: 1px solid #f0f0f0; vertical-align: top;">
-      <a href="screenshots/fullsize/enter_amount.png">
-        <img src="screenshots/enter_amount.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); max-width: 100%; height: auto;" alt="Ввели сумму перевода">
-      </a>
-      <p style="margin-top: 8px; font-size: 13px; color: #555;">2. Ввод суммы</p>
+    <td>
+      <img src="screenshots/enter_amount.png" width="150" style="border: 1px solid #eee;">
+      <p>Ввод суммы перевода</p>
     </td>
-    <td style="padding: 10px; border: 1px solid #f0f0f0; vertical-align: top;">
-      <a href="screenshots/fullsize/money_transfer.png">
-        <img src="screenshots/money_transfer.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); max-width: 100%; height: auto;" alt="Перевод совершен успешно">
-      </a>
-      <p style="margin-top: 8px; font-size: 13px; color: #555;">3. Подтверждение</p>
+    <td>
+      <img src="screenshots/money_transfer.png" width="150" style="border: 1px solid #eee;">
+      <p>Статус перевода</p>
     </td>
-    <td style="padding: 10px; border: 1px solid #f0f0f0; vertical-align: top;">
-      <a href="screenshots/fullsize/history_of_money_transfers.png">
-        <img src="screenshots/history_of_money_transfers.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); max-width: 100%; height: auto;" alt="Проверили историю операций">
-      </a>
-      <p style="margin-top: 8px; font-size: 13px; color: #555;">4. История операций</p>
+    <td>
+      <img src="screenshots/history_of_money_transfers.png" width="150" style="border: 1px solid #eee;">
+      <p>История операций</p>
     </td>
   </tr>
 </table>
+
 
 
 ### Статус: Успешно 
@@ -97,10 +91,18 @@
 **Скриншоты**:  
 
 
-
-[<img src="screenshots/send_zero.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Попытка отправить нулевую сумму"/>](screenshots/fullsize/send_zero.png)
-
-[<img src="screenshots/fail_send_zero.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Error notification"/>](screenshots/fullsize/fail_send_zero.png)
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr style="text-align: center;">
+    <td>
+      <img src="screenshots/send_zero.png" width="150" style="border: 1px solid #eee;">
+      <p>Попытка отправить нулевую сумму</p>
+    </td>
+    <td>
+      <img src="screenshots/fail_send_zero.png" width="150" style="border: 1px solid #eee;">
+      <p>Отображение уведомления об ошибке</p>
+    </td>
+  </tr>
+</table>
 
 
 ### Статус: Успешно 
@@ -137,13 +139,6 @@
 
 ### Статус: Успешно 
 
-## 4. Быстрые проверки (Smoke-тесты)
-| ID       | Проверка                          | Шаги                      | Ожидаемый результат          |
-|----------|-----------------------------------|---------------------------|------------------------------|
-| TC-SM-01 | Открытие главного экрана         | Запустить приложение      | Виден баланс                 |
-| TC-SM-02 | Работа поиска по операциям       | Ввести "АЗС" в поиск      | Показываются АЗС-платежи     |
-| TC-SM-03 | Смена темы (темная/светлая)      | Настройки → Внешний вид   | Интерфейс меняется           |
-
 
 ## 4. Смена темы (темная/светлая)
 **ID:** TC-UI-004  
@@ -172,13 +167,18 @@
 
 ### Фактический результат: 
 **Скриншоты:**  
-[<img src="screenshots/light_theme.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Светлая тема"/>](screenshots/fullsize/light_theme.png)
-
-[<img src="screenshots/dark_theme.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Темная тема"/>](screenshots/fullsize/dark_theme.png)
-
-<!-- [<img src="screenshots/light_theme.png" width="150" alt="Светлая тема"/>](screenshots/fullsize/light_theme.png) 
-
-[<img src="screenshots/dark_theme.png" width="150" alt="Темная тема"/>](screenshots/fullsize/dark_theme.png) -->
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr style="text-align: center;">
+    <td>
+      <img src="screenshots/light_theme.png" width="150" style="border: 1px solid #eee;">
+      <p>Светлая тема</p>
+    </td>
+    <td>
+      <img src="screenshots/dark_theme.png" width="150" style="border: 1px solid #eee;">
+      <p>Темная тема</p>
+    </td>
+  </tr>
+</table>
 
 
 ### Статус: Успешно 
@@ -213,16 +213,27 @@
 **Скриншоты:**
 
 **Перешли в платежи мтс, ввели номер телефона:**  
-[<img src="screenshots/to_mts.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Перешли в платежи мтс"/>](screenshots/fullsize/to_mts.png)
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr style="text-align: center;">
+    <td>
+      <img src="screenshots/to_mts.png" width="150" style="border: 1px solid #eee;">
+      <p>Переходим в платежи, выбираем МТС</p>
+    </td>
+    <td>
+      <img src="screenshots/mts_enter_10.png" width="150" style="border: 1px solid #eee;">
+      <p>Вводим сумму пополнения</p>
+    </td>
+    <td>
+      <img src="screenshots/mts_pay_doc.png" width="150" style="border: 1px solid #eee;">
+      <p>Отчёт операции</p>
+    </td>
+    <td>
+      <img src="screenshots/history_mts.png" width="150" style="border: 1px solid #eee;">
+      <p>История операций</p>
+    </td>
+  </tr>
+</table>
 
 
-**Ввели сумму перевода (10 рублей):**  
-[<img src="screenshots/mts_enter_10.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Ввели сумму"/>](screenshots/fullsize/mts_enter_10.png)
 
-
-**Перешли в платежи мтс, ввели номер телефона:**  
-[<img src="screenshots/to_mts.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Перешли в платежи мтс"/>](screenshots/fullsize/to_mts.png)
-
-
-**Перешли в платежи мтс, ввели номер телефона:**  
-[<img src="screenshots/to_mts.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Перешли в платежи мтс"/>](screenshots/fullsize/to_mts.png)
+### Статус: Успешно 
