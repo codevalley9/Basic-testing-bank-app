@@ -47,8 +47,10 @@
 ### Фактический результат: 
 
 
-**Скриншот**: 
-[![Выбрали контакт](/screenshots/find_contact.png){ width=50% }](/screenshots/find_contact.png)
+**Скриншот**:  
+[<img src="screenshots/find_contact.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Поиск контакта в СберБанк Онлайн"/>](screenshots/fullsize/find_contact.png)
+
+<!-- [![Выбрали контакт](/screenshots/find_contact.png){ width=50% }](/screenshots/find_contact.png) -->
 
 ![Ввели сумму перевода](/screenshots/enter_amount.png)
 
