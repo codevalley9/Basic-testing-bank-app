@@ -1,4 +1,4 @@
-# Тест-кейсы для проверки ключевых операций в приложении СберБанк Онлайн
+# Тест-кейсы для приложения "СберБанк Онлайн"
 
 **Устройство**: Realme RMX3085 (8/128GB, Android 13)  
 **Версия приложения**: 16.9.0  
@@ -45,18 +45,6 @@
 
 
 **Скриншоты**:  
-<!-- [<img src="screenshots/find_contact.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Поиск контакта в СберБанк Онлайн"/>](screenshots/fullsize/find_contact.png)
-
-
-[<img src="screenshots/enter_amount.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Ввели сумму перевода"/>](screenshots/fullsize/enter_amount.png)
-
-
-
-[<img src="screenshots/money_transfer.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Перевод совершен успешно"/>](screenshots/fullsize/money_transfer.png)
-
-
-
-[<img src="screenshots/history_of_money_transfers.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Проверили историю операций"/>](screenshots/fullsize/history_of_money_transfers.png) -->
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
   <tr style="text-align: center;">
@@ -148,3 +136,93 @@
 [<img src="screenshots/history.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Корректная история операций"/>](screenshots/fullsize/history.png)
 
 ### Статус: Успешно 
+
+## 4. Быстрые проверки (Smoke-тесты)
+| ID       | Проверка                          | Шаги                      | Ожидаемый результат          |
+|----------|-----------------------------------|---------------------------|------------------------------|
+| TC-SM-01 | Открытие главного экрана         | Запустить приложение      | Виден баланс                 |
+| TC-SM-02 | Работа поиска по операциям       | Ввести "АЗС" в поиск      | Показываются АЗС-платежи     |
+| TC-SM-03 | Смена темы (темная/светлая)      | Настройки → Внешний вид   | Интерфейс меняется           |
+
+
+## 4. Смена темы (темная/светлая)
+**ID:** TC-UI-004  
+**Приоритет:** Low  
+**Тип:** UI-тестирование  
+
+### Предусловия:
+1. Приложение установлено и запущено
+2. Пользователь авторизован
+
+### Шаги:
+1. Открыть боковое меню (свайп вправо)
+2. Нажать "Настройки"
+3. Выбрать "Внешний вид"
+4. Переключить тумблер "Темная тема"
+5. Вернуться на главный экран
+
+### Ожидаемый результат:
+| Элемент | Требование |
+|---------|------------|
+| Фон | Изменяется согласно выбранной теме |
+| Текст | Сохраняет читаемость  |
+| Иконки | Корректно инвертируются |
+| Состояние | Сохраняется после перезапуска приложения |
+
+
+### Фактический результат: 
+**Скриншоты:**  
+[<img src="screenshots/light_theme.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Светлая тема"/>](screenshots/fullsize/light_theme.png)
+
+[<img src="screenshots/dark_theme.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Темная тема"/>](screenshots/fullsize/dark_theme.png)
+
+<!-- [<img src="screenshots/light_theme.png" width="150" alt="Светлая тема"/>](screenshots/fullsize/light_theme.png) 
+
+[<img src="screenshots/dark_theme.png" width="150" alt="Темная тема"/>](screenshots/fullsize/dark_theme.png) -->
+
+
+### Статус: Успешно 
+---
+
+## 5. Оплата мобильной связи МТС
+**ID:** TC-PAY-005  
+**Приоритет:** High  
+**Тип:** Функциональное тестирование
+
+### Предусловия:
+1. Баланс ≥ 10 ₽
+2. Номер МТС в формате 9XX-XXX-XX-XX
+
+### Шаги:
+1. Открыть раздел "Платежи"
+2. Выбрать "Платежи" → "Мобильная связь" → "МТС"
+3. Ввести номер телефона
+4. Ввести сумму "10 ₽"
+5. Нажать "Оплатить"
+6. Подтвердить SMS-кодом
+
+### Ожидаемый результат:
+1. Появляется чек с данными:
+   - Номер: [введенный]
+   - Сумма: 10 ₽
+   - Комиссия: 0 ₽
+2. Баланс уменьшается на 10 ₽
+
+
+### Фактический результат:
+**Скриншоты:**
+
+**Перешли в платежи мтс, ввели номер телефона:**  
+[<img src="screenshots/to_mts.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Перешли в платежи мтс"/>](screenshots/fullsize/to_mts.png)
+
+
+**Ввели сумму перевода (10 рублей):**  
+[<img src="screenshots/mts_enter_10.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Ввели сумму"/>](screenshots/fullsize/mts_enter_10.png)
+
+
+**Перешли в платежи мтс, ввели номер телефона:**  
+[<img src="screenshots/to_mts.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Перешли в платежи мтс"/>](screenshots/fullsize/to_mts.png)
+
+
+**Перешли в платежи мтс, ввели номер телефона:**  
+[<img src="screenshots/to_mts.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Перешли в платежи мтс"/>](screenshots/fullsize/to_mts.png)
