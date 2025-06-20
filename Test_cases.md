@@ -5,12 +5,9 @@
 **Дата тестирования**: 19.06.2025
 
 ## Содержание
-1. [Перевод денег между счетами (позитивный сценарий)](#перевод_контакту_в_сбербанк)
-2. [Попытка перевода нулевой суммы (негативный сценарий)](#перевод_нулевой_суммы)
-3. [Проверка отображения истории транзакций](#история)
-4. [Длинный запрос](#длинный-запрос)
-5. [Эмодзи](#эмодзи)
-7. [История поиска](#история-поиска)
+1. [Перевод денег между счетами](#1-перевод-денег-между-счетами-позитивный-сценарий)
+2. [Попытка перевода нулевой суммы](#2-попытка-перевода-нулевой-суммы-негативный-сценарий)
+3. [Проверка истории транзакций](#3-проверка-отображения-истории-транзакций)
 
 ## 1. Перевод денег между счетами (позитивный сценарий)
 **ID:** TC-PAY-001  
@@ -47,16 +44,49 @@
 ### Фактический результат: 
 
 
-**Скриншот**:  
-[<img src="screenshots/find_contact.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Поиск контакта в СберБанк Онлайн"/>](screenshots/fullsize/find_contact.png)
+**Скриншоты**:  
+<!-- [<img src="screenshots/find_contact.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Поиск контакта в СберБанк Онлайн"/>](screenshots/fullsize/find_contact.png)
 
-<!-- [![Выбрали контакт](/screenshots/find_contact.png){ width=50% }](/screenshots/find_contact.png) -->
 
-![Ввели сумму перевода](/screenshots/enter_amount.png)
+[<img src="screenshots/enter_amount.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Ввели сумму перевода"/>](screenshots/fullsize/enter_amount.png)
 
-![Перевод совершен успешно](/screenshots/money_transfer.png)
 
-![Проверили историю операций](/screenshots/history_of_money_transfers.png)
+
+[<img src="screenshots/money_transfer.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Перевод совершен успешно"/>](screenshots/fullsize/money_transfer.png)
+
+
+
+[<img src="screenshots/history_of_money_transfers.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Проверили историю операций"/>](screenshots/fullsize/history_of_money_transfers.png) -->
+
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+  <tr style="text-align: center;">
+    <td style="padding: 10px; border: 1px solid #f0f0f0; vertical-align: top;">
+      <a href="screenshots/fullsize/find_contact.png">
+        <img src="screenshots/find_contact.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); max-width: 100%; height: auto;" alt="Поиск контакта в СберБанк Онлайн">
+      </a>
+      <p style="margin-top: 8px; font-size: 13px; color: #555;">1. Поиск контакта</p>
+    </td>
+    <td style="padding: 10px; border: 1px solid #f0f0f0; vertical-align: top;">
+      <a href="screenshots/fullsize/enter_amount.png">
+        <img src="screenshots/enter_amount.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); max-width: 100%; height: auto;" alt="Ввели сумму перевода">
+      </a>
+      <p style="margin-top: 8px; font-size: 13px; color: #555;">2. Ввод суммы</p>
+    </td>
+    <td style="padding: 10px; border: 1px solid #f0f0f0; vertical-align: top;">
+      <a href="screenshots/fullsize/money_transfer.png">
+        <img src="screenshots/money_transfer.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); max-width: 100%; height: auto;" alt="Перевод совершен успешно">
+      </a>
+      <p style="margin-top: 8px; font-size: 13px; color: #555;">3. Подтверждение</p>
+    </td>
+    <td style="padding: 10px; border: 1px solid #f0f0f0; vertical-align: top;">
+      <a href="screenshots/fullsize/history_of_money_transfers.png">
+        <img src="screenshots/history_of_money_transfers.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1); max-width: 100%; height: auto;" alt="Проверили историю операций">
+      </a>
+      <p style="margin-top: 8px; font-size: 13px; color: #555;">4. История операций</p>
+    </td>
+  </tr>
+</table>
+
 
 ### Статус: Успешно 
 
@@ -76,9 +106,16 @@
 
 ### Фактический результат: 
 
-**Скриншот**:  
-![Попытка отправить нулевую сумму](/screenshots/send_zero.png)
-![Error notification](/screenshots/fail_send_zero.png)
+**Скриншоты**:  
+
+
+
+[<img src="screenshots/send_zero.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Попытка отправить нулевую сумму"/>](screenshots/fullsize/send_zero.png)
+
+[<img src="screenshots/fail_send_zero.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Error notification"/>](screenshots/fullsize/fail_send_zero.png)
+
+
+### Статус: Успешно 
 
 
 ## 3. Проверка отображения истории транзакций
@@ -108,4 +145,6 @@
 ### Фактический результат: 
 
 **Скриншот**:  
-![Корректная история операций](/screenshots/history.png)
+[<img src="screenshots/history.png" width="200" style="border: 1px solid #eee; box-shadow: 2px 2px 5px rgba(0,0,0,0.1)" alt="Корректная история операций"/>](screenshots/fullsize/history.png)
+
+### Статус: Успешно 
