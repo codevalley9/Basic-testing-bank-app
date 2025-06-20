@@ -47,8 +47,8 @@
 ### Фактический результат: 
 
 
-**Скриншот**:  
-![Выбрали контакт](/screenshots/find_contact.png)
+**Скриншот**: 
+[![Выбрали контакт](/screenshots/find_contact.png){ width=50% }](/screenshots/find_contact.png)
 
 ![Ввели сумму перевода](/screenshots/enter_amount.png)
 
